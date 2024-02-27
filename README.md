@@ -1,8 +1,9 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
-
+```
+Name :PAVITHRA R
+Roll no:212222230106 
+Date of experiment :26-02-2024
+```
 
 
 
@@ -77,27 +78,127 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
+## Addition  of 8 bit ALP: 
+```
+org 100h
+MOV al,11h;
+MOV bl,20h;
+ADD al,bl;
+MOV [6379h],al;
+ret
+
+```
 
 
+## Output:
 
-## Output  
+![Output1-pmc1](https://github.com/Pavithraramasaamy/EXPERIMENT--01-ALP-FOR-8086/assets/118596964/b9c51551-8d14-4411-9eb3-c6e0729dd045)
+
+
  
 ## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
-## Multiplication alp 
- ## Output  
+```
+org 100h
+MOV al,20h;
+MOV bl,[8778h];
+SUB bl,al;
+MOV [8798h],bl;
+ret
+
+ ```
+## Output:
 
 
-## Division alp 
+![Output2-pmc1](https://github.com/Pavithraramasaamy/EXPERIMENT--01-ALP-FOR-8086/assets/118596964/668066da-34b6-4ba2-a315-e10f62bcba63)
 
-## Output  
+
+## Multiplication alp:
+```
+org 100h
+MOV al,13h;
+MOV bl,2h;
+MUL bl;
+MOV [6063h],bl;
+ret
+
+```
+# Output:
+ ![Output3-pmc1](https://github.com/Pavithraramasaamy/EXPERIMENT--01-ALP-FOR-8086/assets/118596964/3629060b-444b-4555-b122-1d707429d2ea)
+
+
+## Division alp:
+```
+org 100h
+MOV al,26h;
+MOV bl,[2369h];
+DIV bl;
+MOV [2399h],al;
+ret
+
+```
+
+## Output:
+![Output4-pmc1](https://github.com/Pavithraramasaamy/EXPERIMENT--01-ALP-FOR-8086/assets/118596964/29f1e673-5517-4c92-a477-5d39721e79ea)
+
+## Programs for logical operations:
+
+## AND:
+```
+org 100h
+MOV bx,1000h;
+AND bx,1111h;
+MOV [0040h+02],bx;
+ret
+```
+### Output:
+![Output5-pmc1](https://github.com/Pavithraramasaamy/EXPERIMENT--01-ALP-FOR-8086/assets/118596964/7aa8dfca-abcd-4ab9-9dd2-bf166e7eceb5)
+
+### OR:
+```
+org 100h
+MOV ax,[0070h];
+MOV bx,1000h;
+OR ax,bx;
+MOV [0060h],ax;
+ret
+```
+
+## Output:
+
+![Output6-pmc1](https://github.com/Pavithraramasaamy/EXPERIMENT--01-ALP-FOR-8086/assets/118596964/8226cd05-bebf-4803-9449-55a1a7d1e879)
+
+## NOT:
+```
+org 100h
+MOV bx,0060h;
+MOV ax,[bx]; 
+NOT al;
+MOV [0060h+04],ax;
+ret
+
+```
+### Output:
+![Output7-pmc1](https://github.com/Pavithraramasaamy/EXPERIMENT--01-ALP-FOR-8086/assets/118596964/d142e64b-f0b6-4b23-9f45-b1c16d35dd9f)
+
+### XOR:
+```
+org 100h
+MOV bx,0050h;
+MOV ax,[bx]; 
+XOR ax,bx;
+MOV [0050h+03],ax;
+ret
+```
+
+### Output:
+
+![Output8-pmc1](https://github.com/Pavithraramasaamy/EXPERIMENT--01-ALP-FOR-8086/assets/118596964/322648ce-782d-4a02-abce-bd743f2a594c)
+
 
 
 ## Result :
  
-
+Thus, ALP for fundamental arithmetic and logical operations are executed successfully.
 
 
 
