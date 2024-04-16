@@ -1,9 +1,9 @@
 
-### Name :PAVITHRA R
-### Roll no:212222230106 
+### Name : PAVITHRA R
+### Roll no : 212222230106 
 ### Date of experiment :26-02-2024
 
-# EXPERIMENT--01-ALP-FOR-8086
+# EXPERIMENT - 01 ALP FOR 8086
 
 
 
